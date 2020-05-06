@@ -1,0 +1,12 @@
+<% layout('layout')%>
+<% if(show){%>
+<span>资料呈现</span>
+<%}%>
+  <%= title%>
+<!-- =表示收到的是以字符串的形式显示，即使是html的语法，-表示收到的以html的格式显示 -->
+<%= author%>
+<ul>
+  <% for(var i=0;i<course.length;i++){ %>
+  <li><%-course[i]%></li>
+  <%}%>
+  </ul>
